@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MapBox.h"
 
-@interface MTSViewController : UIViewController
+@interface MTSViewController : UIViewController<RMMapViewDelegate>
 
 @property (weak, nonatomic) IBOutlet RMMapView *mapView;
 

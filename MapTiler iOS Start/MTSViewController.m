@@ -9,6 +9,9 @@
 #import "MTSViewController.h"
 
 @interface MTSViewController ()
+{
+    UIBarButtonItem *locationButton;
+}
 
 @end
 
@@ -21,10 +24,11 @@
     self.title = @"MapTiler iOS Start";
     
     // Setup map source
-    RMMBTilesSource *offlineSource = [[RMMBTilesSource alloc] initWithTileSetResource:@"grandcanyon" ofType:@"mbtiles"];
+    RMMBTilesSource *offlineSource = [[RMMBTilesSource alloc] initWithTileSetResource:@"map" ofType:@"mbtiles"];
     
     // Setup RMMapView
     self.mapView.tileSource = offlineSource;
+    self.mapView.delegate = self;
     
     self.mapView.showLogoBug = NO;
     self.mapView.hideAttribution = YES;
@@ -36,7 +40,9 @@
     self.mapView.zoom = (offlineSource.minZoom + offlineSource.maxZoom) / 2;
     
     // Setup location button
-    self.navigationItem.rightBarButtonItem = [[RMUserTrackingBarButtonItem alloc] initWithMapView:self.mapView];
+    locationButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"location_none"] style:UIBarButtonItemStylePlain target:self action:@selector(locationButtonPressed)];
+    
+    self.navigationItem.rightBarButtonItem = locationButton;
 }
 
 - (void)didReceiveMemoryWarning
@@ -54,6 +60,43 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return YES;
+}
+
+#pragma mark - Button Actions
+
+- (void)locationButtonPressed
+{
+    switch (self.mapView.userTrackingMode) {
+        case RMUserTrackingModeNone:
+            self.mapView.userTrackingMode = RMUserTrackingModeFollow;
+            [locationButton setImage:[UIImage imageNamed:@"location_follow"]];
+            break;
+        case RMUserTrackingModeFollow:
+            self.mapView.userTrackingMode = RMUserTrackingModeFollowWithHeading;
+            [locationButton setImage:[UIImage imageNamed:@"location_heading"]];
+            break;
+        default:
+            self.mapView.userTrackingMode = RMUserTrackingModeNone;
+            [locationButton setImage:[UIImage imageNamed:@"location_none"]];
+            break;
+    }
+}
+
+#pragma mark - RMMapView Delegate
+
+- (void)mapView:(RMMapView *)mapView didChangeUserTrackingMode:(RMUserTrackingMode)mode animated:(BOOL)animated
+{
+    switch (self.mapView.userTrackingMode) {
+        case RMUserTrackingModeFollow:
+            [locationButton setImage:[UIImage imageNamed:@"location_follow"]];
+            break;
+        case RMUserTrackingModeFollowWithHeading:
+            [locationButton setImage:[UIImage imageNamed:@"location_heading"]];
+            break;
+        default:
+            [locationButton setImage:[UIImage imageNamed:@"location_none"]];
+            break;
+    }
 }
 
 

@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A0CE42417733AA20046E6C6 /* map.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = 2A0CE42317733AA20046E6C6 /* map.mbtiles */; };
 		2A0E67C1176F0DDA0091705A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0E67C0176F0DDA0091705A /* CoreLocation.framework */; };
 		2A0E67C3176F0DE20091705A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0E67C2176F0DE20091705A /* QuartzCore.framework */; };
 		2A0E67C4176F0DEC0091705A /* libMapBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0E67B9176F0C7B0091705A /* libMapBox.a */; };
 		2A0E67C6176F0DFE0091705A /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0E67C5176F0DFE0091705A /* libsqlite3.0.dylib */; };
 		2A0E67C8176F0E100091705A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0E67C7176F0E100091705A /* libz.dylib */; };
 		2A0E67C9176F10630091705A /* MapBox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A0E67BB176F0C7B0091705A /* MapBox.bundle */; };
-		2A0E67CD176F150C0091705A /* grandcanyon.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = 2A0E67CC176F150C0091705A /* grandcanyon.mbtiles */; };
 		2A64C7A1176CAF38009384E0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A64C7A0176CAF38009384E0 /* UIKit.framework */; };
 		2A64C7A3176CAF38009384E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A64C7A2176CAF38009384E0 /* Foundation.framework */; };
 		2A64C7A5176CAF38009384E0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A64C7A4176CAF38009384E0 /* CoreGraphics.framework */; };
@@ -25,6 +25,12 @@
 		2A64C7B7176CAF38009384E0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A64C7B6176CAF38009384E0 /* Default-568h@2x.png */; };
 		2A64C7BA176CAF38009384E0 /* MTSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A64C7B9176CAF38009384E0 /* MTSViewController.m */; };
 		2A64C7BD176CAF38009384E0 /* MTSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A64C7BB176CAF38009384E0 /* MTSViewController.xib */; };
+		2A8EC50F177B7BF600E86463 /* location_none.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A8EC50D177B7BF600E86463 /* location_none.png */; };
+		2A8EC510177B7BF600E86463 /* location_none@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A8EC50E177B7BF600E86463 /* location_none@2x.png */; };
+		2A8EC516177B7E9100E86463 /* location_follow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A8EC512177B7E9100E86463 /* location_follow.png */; };
+		2A8EC517177B7E9100E86463 /* location_follow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A8EC513177B7E9100E86463 /* location_follow@2x.png */; };
+		2A8EC518177B7E9100E86463 /* location_heading.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A8EC514177B7E9100E86463 /* location_heading.png */; };
+		2A8EC519177B7E9100E86463 /* location_heading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A8EC515177B7E9100E86463 /* location_heading@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,12 +58,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A0CE42317733AA20046E6C6 /* map.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = map.mbtiles; sourceTree = "<group>"; };
 		2A0E67B3176F0C7A0091705A /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "MapBox-iOS-SDK/MapView/MapView.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		2A0E67C0176F0DDA0091705A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2A0E67C2176F0DE20091705A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2A0E67C5176F0DFE0091705A /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		2A0E67C7176F0E100091705A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		2A0E67CC176F150C0091705A /* grandcanyon.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; name = grandcanyon.mbtiles; path = ../../../grandcanyon.mbtiles; sourceTree = "<group>"; };
 		2A64C79D176CAF38009384E0 /* MapTiler iOS Start.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MapTiler iOS Start.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A64C7A0176CAF38009384E0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2A64C7A2176CAF38009384E0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -74,6 +80,12 @@
 		2A64C7B8176CAF38009384E0 /* MTSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTSViewController.h; sourceTree = "<group>"; };
 		2A64C7B9176CAF38009384E0 /* MTSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTSViewController.m; sourceTree = "<group>"; };
 		2A64C7BC176CAF38009384E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MTSViewController.xib; sourceTree = "<group>"; };
+		2A8EC50D177B7BF600E86463 /* location_none.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_none.png; sourceTree = "<group>"; };
+		2A8EC50E177B7BF600E86463 /* location_none@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location_none@2x.png"; sourceTree = "<group>"; };
+		2A8EC512177B7E9100E86463 /* location_follow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_follow.png; sourceTree = "<group>"; };
+		2A8EC513177B7E9100E86463 /* location_follow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location_follow@2x.png"; sourceTree = "<group>"; };
+		2A8EC514177B7E9100E86463 /* location_heading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_heading.png; sourceTree = "<group>"; };
+		2A8EC515177B7E9100E86463 /* location_heading@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location_heading@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +128,8 @@
 		2A0E67CE176F15240091705A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2A0E67CC176F150C0091705A /* grandcanyon.mbtiles */,
+				2A8EC50C177B7BF600E86463 /* Images */,
+				2A0CE42317733AA20046E6C6 /* map.mbtiles */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -179,6 +192,19 @@
 				2A64C7B6176CAF38009384E0 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A8EC50C177B7BF600E86463 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2A8EC512177B7E9100E86463 /* location_follow.png */,
+				2A8EC513177B7E9100E86463 /* location_follow@2x.png */,
+				2A8EC514177B7E9100E86463 /* location_heading.png */,
+				2A8EC515177B7E9100E86463 /* location_heading@2x.png */,
+				2A8EC50D177B7BF600E86463 /* location_none.png */,
+				2A8EC50E177B7BF600E86463 /* location_none@2x.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +289,13 @@
 				2A64C7B7176CAF38009384E0 /* Default-568h@2x.png in Resources */,
 				2A64C7BD176CAF38009384E0 /* MTSViewController.xib in Resources */,
 				2A0E67C9176F10630091705A /* MapBox.bundle in Resources */,
-				2A0E67CD176F150C0091705A /* grandcanyon.mbtiles in Resources */,
+				2A0CE42417733AA20046E6C6 /* map.mbtiles in Resources */,
+				2A8EC50F177B7BF600E86463 /* location_none.png in Resources */,
+				2A8EC510177B7BF600E86463 /* location_none@2x.png in Resources */,
+				2A8EC516177B7E9100E86463 /* location_follow.png in Resources */,
+				2A8EC517177B7E9100E86463 /* location_follow@2x.png in Resources */,
+				2A8EC518177B7E9100E86463 /* location_heading.png in Resources */,
+				2A8EC519177B7E9100E86463 /* location_heading@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
