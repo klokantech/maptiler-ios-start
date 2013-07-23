@@ -9,7 +9,7 @@ Usage:
 Create a copy of the project on your Mac with XCode installed.
 You can do that by running this command in the Terminal:
 
-`git clone --recursive git@github.com:klokantech/maptiler-ios-start.git`
+`git clone --recursive https://github.com/klokantech/maptiler-ios-start.git`
 
 Open the project in XCode and press on Build.
 
