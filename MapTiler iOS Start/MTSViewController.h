@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+
 #import "MapBox.h"
 
-@interface MTSViewController : UIViewController<RMMapViewDelegate>
+@interface MTSViewController : UIViewController<RMMapViewDelegate, CLLocationManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet RMMapView *mapView;
 
