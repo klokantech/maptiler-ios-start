@@ -47,7 +47,6 @@
     self.mapView.showLogoBug = NO;
     self.mapView.hideAttribution = YES;
     self.mapView.adjustTilesForRetinaDisplay = YES;
-    self.mapView.showsUserLocation = YES;
     
     self.mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     
@@ -57,6 +56,8 @@
     locationButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"location_none"] style:UIBarButtonItemStylePlain target:self action:@selector(locationButtonPressed)];
     
     self.navigationItem.rightBarButtonItem = locationButton;
+    
+    [self.mapView setCenterCoordinate:[source centerCoordinate]];
 }
 
 - (void)didReceiveMemoryWarning
