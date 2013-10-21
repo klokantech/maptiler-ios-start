@@ -47,15 +47,16 @@
     self.mapView.showLogoBug = NO;
     self.mapView.hideAttribution = YES;
     self.mapView.adjustTilesForRetinaDisplay = YES;
+    self.mapView.maxZoom = 20;
     
     self.mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-    
-    self.mapView.zoom = (source.minZoom + source.maxZoom) / 2;
     
     // Setup location button
     locationButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"location_none"] style:UIBarButtonItemStylePlain target:self action:@selector(locationButtonPressed)];
     
     self.navigationItem.rightBarButtonItem = locationButton;
+    
+    self.mapView.zoom = source.minZoom;
     
     [self.mapView setCenterCoordinate:[source centerCoordinate]];
 }
